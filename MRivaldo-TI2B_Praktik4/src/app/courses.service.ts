@@ -9,10 +9,11 @@ export class CoursesService {
 
   getCourses(){
     return [
-    {id: 1, name: 'Berlari', ket: 'lari 1 jam tiap hari'},
-    {id: 2, name: 'Senam', ket:'senam tiap sore'},
-    {id: 3, name: 'Bermain Musik', ket:'bermain musik tiap waktu'},
-    
+      {id: 0, name: 'HTML'},
+      {id: 2, name: 'PHP'},
+      {id: 3, name: 'C#'},
+      {id: 4, name: 'Java'},
+      {id: 5, name: 'python'}, 
   ];
   }
 }

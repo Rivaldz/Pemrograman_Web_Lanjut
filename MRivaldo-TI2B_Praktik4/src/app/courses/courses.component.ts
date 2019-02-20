@@ -9,18 +9,15 @@ import { CoursesService } from '../courses.service';
 export class CoursesComponent implements OnInit {
 
   title = 'Belajar angular';
-  Courses=[
-    {id: 0, name: 'HTML'},
-    {id: 2, name: 'PHP'},
-    {id: 3, name: 'C#'},
-    {id: 4, name: 'Java'},
-    {id: 5, name: 'python'},
-  ]
-  getTitle(){
-    return this.title;
-  }
+  Courses;
 
-  constructor(){  }
+  // getTitle(){
+  //   return this.title;
+  // }
+
+  constructor(private service:CoursesService){  
+    this.Courses=service.getCourses();
+  }
   
   ngOnInit() {
   }
