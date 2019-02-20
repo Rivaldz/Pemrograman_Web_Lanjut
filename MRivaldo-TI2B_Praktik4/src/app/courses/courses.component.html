@@ -1,5 +1,5 @@
 <!-- <p>Courses Work </p> -->
-<p>{{getTitle()}}</p>
+<p>{{ Title }}</p>
 
 <table>
 	<thead>
@@ -14,4 +14,19 @@
 			<td>{{Courses.name}}</td>
 		</tr>
 	</tbody>
+
 </table>
+<table>
+	<tr>
+		<td [attr.colspan]='colspan'></td>
+	</tr>
+</table>
+
+<h2>{{binding}}</h2>
+<h2 [textContent] ='binding'></h2>
+
+<img src="{{imageUrl}}" />
+<img [src]="imageUrl" />
+<li>
+	<button type='button' class='btn btn-primary'>tambah</button>
+</li>

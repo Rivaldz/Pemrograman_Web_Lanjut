@@ -11,6 +11,11 @@ export class CoursesComponent implements OnInit {
   title = 'Belajar angular';
   Courses;
 
+  binding = 'property-binding';
+  imageUrl = 'http://lorempixel.com/400/200';
+  colSpan = 2;
+  
+
   // getTitle(){
   //   return this.title;
   // }
