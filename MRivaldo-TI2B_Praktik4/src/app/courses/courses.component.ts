@@ -14,7 +14,8 @@ export class CoursesComponent implements OnInit {
   binding = 'property-binding';
   imageUrl = 'http://lorempixel.com/400/200';
   colSpan = 2;
-  
+  isActive = true;
+
 
   // getTitle(){
   //   return this.title;
