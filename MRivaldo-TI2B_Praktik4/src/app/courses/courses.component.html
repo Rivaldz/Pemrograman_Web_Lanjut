@@ -1,0 +1,32 @@
+<div style='text-align:center;' membuat teks rata tengah> INI Tugas Pertama Biodata </div>
+<div style='text-align:center;' membuat teks rata tengah>{{tanggal | date}} </div>
+
+<p>
+ Nama : {{getNama()}}
+</p>
+<p>
+  Alamat : {{getAlamat()}}
+</p>
+<p>Hobby saya</p>
+<html ng-app="tblApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Belajar Angulars</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="appTbl.js"></script>
+</head>
+<body ng-controller="tblCtrl">	
+	<table border="1">
+		<tr>
+			<th>No</th>
+			<th>Hobby</th>
+			<th>Keterangan</th>
+		</tr>
+		<tr *ngFor="let Courses of Courses">
+    <td> {{Courses.id}}</td>
+    <td>{{Courses.name}}</td>
+    <td>{{Courses.ket}}</td>
+		</tr>
+	</table>
+</body>
+</html>
