@@ -20,6 +20,9 @@ export class CoursesComponent implements OnInit {
   // getTitle(){
   //   return this.title;
   // }
+  onSave(){
+    console.log("button sudah di klik");
+  }
 
   constructor(private service:CoursesService){  
     this.Courses=service.getCourses();
