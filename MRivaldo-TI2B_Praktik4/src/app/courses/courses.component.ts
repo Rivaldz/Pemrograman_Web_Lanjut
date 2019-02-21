@@ -20,8 +20,13 @@ export class CoursesComponent implements OnInit {
   // getTitle(){
   //   return this.title;
   // }
-  onSave(){
-    console.log("button sudah di klik");
+  onSave($event){
+    $event.stopPropagation();
+    console.log("button sudah di klik",$event);
+  }
+
+  onDivClick($event){
+    console.log("ini method div",$event);
   }
 
   constructor(private service:CoursesService){  

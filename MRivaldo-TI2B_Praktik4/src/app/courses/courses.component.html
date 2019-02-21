@@ -30,7 +30,8 @@
 <li>
 	<button type ='button' class='btn btn-primary'>tambah</button>
 	<button type='button' class="bte btn-primary" [style.backgroundColor]="isActive?'blue':'white'">style</button>
-
-	<button type="button" class="btn btn-default" (click)="onSave()">button</button>
+<div (click)="onDivClick($event)">
+		<button type="button" class="btn btn-default" (click)="onSave($event)">button</button>
+</div>
 
 </li>
