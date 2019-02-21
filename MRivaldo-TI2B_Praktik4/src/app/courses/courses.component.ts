@@ -25,8 +25,8 @@ export class CoursesComponent implements OnInit {
     console.log("button sudah di klik",$event);
   }
 
-  onKeyUp(){
-    console.log("Enter telah di tekan");
+  onKeyUp(nama){
+    console.log(nama);
   }
 
   onDivClick($event){

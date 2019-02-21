@@ -34,6 +34,6 @@
 		<button type="button" class="btn btn-default" (click)="onSave($event)">button</button>
 </div>
 
-<input type="text"(keyup.enter)="onKeyUp()">
+<input type="text" #nama (keyup.enter)="onKeyUp(nama.value)">
 
 </li>
