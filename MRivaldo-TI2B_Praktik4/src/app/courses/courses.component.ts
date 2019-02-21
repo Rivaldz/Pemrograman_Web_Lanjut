@@ -20,13 +20,15 @@ export class CoursesComponent implements OnInit {
   // getTitle(){
   //   return this.title;
   // }
+  nama = 'shintia';
+
   onSave($event){
     $event.stopPropagation();
     console.log("button sudah di klik",$event);
   }
 
-  onKeyUp(nama){
-    console.log(nama);
+  onKeyUp(){
+    console.log(this.nama);
   }
 
   onDivClick($event){
