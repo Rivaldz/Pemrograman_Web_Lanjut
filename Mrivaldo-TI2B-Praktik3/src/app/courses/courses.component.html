@@ -1,6 +1,19 @@
-<p>
+<!-- <p>
   courses works!
-</p>
+</p> -->
 <!-- <p>{{"judulnya:" + title}}</p> -->
 
 <p>{{getTitle()}}</p>
+
+<table>
+<thead>
+  <th>ID</th>
+  <th>Courses name</th>
+</thead>
+<tbody>
+  <tr *ngfor="let Courses of Courses">
+    <td>{{Courses.id}}</td>
+    <td>{{Courses.name}}</td>
+  </tr>
+</tbody>
+</table>
