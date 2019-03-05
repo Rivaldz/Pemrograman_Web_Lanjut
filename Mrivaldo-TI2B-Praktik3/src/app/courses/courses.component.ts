@@ -8,17 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class CoursesComponent implements OnInit {
 
   title = 'Belajar angular';
-  Courses = [
-    {id : 0, name : 'HTML'}, 
-    {id : 1, name : 'PHP'},
-    {id : 2, name : 'Angular'},
-    {id : 3, name : 'C#'},        
-    {id : 4, name : '.Net'}, 
-  ]
-  getTitle(){
-    return this.title;
-  }
-  constructor() { }
+  Course;
+  // Courses = [
+  //   {id : 0, name : 'HTML'}, 
+  //   {id : 1, name : 'PHP'},
+  //   {id : 2, name : 'Angular'},
+  //   {id : 3, name : 'C#'},        
+  //   {id : 4, name : '.Net'}, 
+  // ]
+  // getTitle(){
+  //   return this.title;
+  // }
+
+  constructor(private service:CoursesService) {
+    this.Course=service.getCourses();
+   }
 
   ngOnInit() {
   }
