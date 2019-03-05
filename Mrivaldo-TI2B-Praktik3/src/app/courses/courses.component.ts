@@ -13,7 +13,7 @@ export class CoursesComponent implements OnInit {
     {id : 1, name : 'PHP'},
     {id : 2, name : 'Angular'},
     {id : 3, name : 'C#'},        
-    {id : 4, name : '.Ne$'}, 
+    {id : 4, name : '.Net'}, 
   ]
   getTitle(){
     return this.title;
