@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RivaldoComponent } from './rivaldo/rivaldo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RivaldoComponent
   ],
   imports: [
     BrowserModule,
