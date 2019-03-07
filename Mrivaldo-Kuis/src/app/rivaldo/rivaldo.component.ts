@@ -12,6 +12,7 @@ export class RivaldoComponent implements OnInit {
 
   title = 'MUHAMMAD RIVALDO SETYO PURNOMO'
   title2= 'Menggunakan stringinterpolar(databinding)'
+  gambar= 'img:img/a.png'
   
   public name="";
   public alamat="";
