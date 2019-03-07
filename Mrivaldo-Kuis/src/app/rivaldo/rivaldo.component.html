@@ -2,28 +2,18 @@
   <h1>
     {{ title }}
   </h1>
-  <img width="300" alt="Angular Logo" src="https://goo.gl/images/">
+  <script src=""></script>
 </div>
-<div>
-  <h3>{{title2}}</h3>
-</div>
+<br>
+<ng-content></ng-content>
 
-<form>
-  First name :
-  <input type="text" name="nama"><br>
-  Last name : 
-  <input type="password" name="pass">
-</form> 
-<br>
-<form>
-  First name :
-  <input type="text"><br>
-  Last name : 
-  <input type="password" name="pass">
-</form> 
-<br>
-<form action="">
-  Alamat: 
-  <input type="text" class="onSavee()">
-</form>
-<button type="button" class="btn btn-default"(click)="onSavee()">Alamat</button>
+ Nama      : <input [(ngModel)]="Name"> <br>
+ Password :<input type = "password" [(ngModel)] = "password"> <br>
+
+ <p>Nama : {{Name}}</p>
+ <p type = "password">Password : {{password}}</p>
+ <!-- <p>fill text Box</p> -->
+ <!-- <textarea name="" id="" cols="30" rows="10">{{password}}</textarea> -->
+
+<button (click)= "onClick()" >TekanSaja</button>
+<p>{{alamat}}</p>
