@@ -1,3 +1,29 @@
-<p>
-  rivaldo works!
-</p>
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+  <img width="300" src="photo.jpg">
+</div>
+<div>
+  <h3>{{title2}}</h3>
+</div>
+
+<form>
+  First name :
+  <input type="text" name="nama"><br>
+  Last name : 
+  <input type="password" name="pass">
+</form> 
+<br>
+<form>
+  First name :
+  <input type="text"><br>
+  Last name : 
+  <input type="password" name="pass">
+</form> 
+<br>
+<form action="">
+  Alamat: 
+  <input type="text" class="onSavee()">
+</form>
+<button type="button" class="btn btn-default"(click)="onSavee()">Alamat</button>
