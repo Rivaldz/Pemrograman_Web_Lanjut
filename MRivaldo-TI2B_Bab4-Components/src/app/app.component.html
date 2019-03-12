@@ -4,11 +4,17 @@
     <div class="col-xs-12">
       <h3> Ini adalah Component </h3>
       <hr>
-      <!-- <app-server></app-server> -->
+      <app-server></app-server>
       <app-servers></app-servers>
+       <!-- ini adalah propertis pada baris 12
+       ini adalah propertis pada baris 13 -->
+      <app-favorit
+        [isFavorit]="post.isFavorit" 
+        (change)="onFavoritchange()"
+        ></app-favorit>
     </div>
-      <!-- <div class="app-server"></div> -->
-      <div class="app-server"></div>
+      <!-- <div class="app-server"></div>
+      <div class="app-server"></div> -->
   </div>
 </div>
 <router-outlet></router-outlet>
