@@ -30,4 +30,7 @@ export class AppComponent {
     console.log(index);
     this.coursesFor.splice(index,1);
   }
+  onChange(item){
+    item.name='Update';
+  }
 }
