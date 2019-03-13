@@ -64,8 +64,14 @@
   {{itemone.nama}}
 </li> -->
 
-<br>
+<!-- <br>
 &nbsp; <button (click) = "loadCourse()">Tampilkan data</button>
-<li *ngFor="let itemone of courseForOne ; TrackBy:trackCourse">{{itemone.nama}}</li>
+<li *ngFor="let itemone of courseForOne ; TrackBy:trackCourse">{{itemone.nama}}</li> -->
+<div *ngIf="courses.length > 0">list courses</div>
+ng <ng-template [ngIf]="courses.length>0">
+  list of course
+</ng-template>
+
+
 <router-outlet></router-outlet>
 
