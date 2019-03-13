@@ -39,5 +39,13 @@
     {{i}}-{{item.name}}
   </li>
 </ul>
+
+<ul>
+  <li *ngFor="let item of coursesFor ; even as isEven">
+
+    {{item.name}}
+    <span *ngIf="isEven">(Even)</span>
+  </li>
+</ul>
 <router-outlet></router-outlet>
 
