@@ -47,16 +47,21 @@
     <span *ngIf="isEven">(Even)</span>
   </li>
 </ul> -->
-
+<!-- 
 <button (click) = "onAdd()">add</button>
 
 <ul>
   <li *ngFor="let item of coursesFor; even as isEven">
     {{item.name}}
     <span *ngIf="isEven">(even)</span>
-    <!-- <button (click)="onRemove(item)">Remove</button> -->
+    <button (click)="onRemove(item)">Remove</button>
     <button (click)="onChange(item)">Update</button>
   </li>
-</ul>
+</ul> -->
+
+<button (click)="loadCourse()">Tampil data</button>
+<li *ngFor="let item of coursesForOne">
+  {{itemone.nama}}
+</li>
 <router-outlet></router-outlet>
 

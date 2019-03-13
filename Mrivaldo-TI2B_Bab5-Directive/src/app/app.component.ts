@@ -33,4 +33,14 @@ export class AppComponent {
   onChange(item){
     item.name='Update';
   }
+  courseForOne;
+  loadCourse(){
+    this.courseForOne=[
+      {id:1,nama:'courseone1'}, 
+      {id:2,nama:'courseone2'},
+      {id:3,nama:'courseone3'},
+      {id:4,nama:'courseone4'},
+      {id:5,nama:'courseone5'},
+    ];
+  }
 }
