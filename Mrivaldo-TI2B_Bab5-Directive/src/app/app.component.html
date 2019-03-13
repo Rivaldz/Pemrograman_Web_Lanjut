@@ -1,0 +1,13 @@
+<!-- <div *ngIf="courses.length > 0">list of courses</div>
+<div *ngIf="courses.length == 0">No courses yet</div> -->
+
+<!-- percabangan ke 2 -->
+<!-- <div *ngIf="courses.length > 0 ; then coursesList else noCourses">List of Courses</div>
+<ng-template #noCourses> no courses yet</ng-template> -->
+
+<!-- percobaan ke 3  -->
+<!-- ng <ng-template #coursesList>atribut coursesList</ng-template> -->
+ 
+<div [hidden]="courses.length == 0"> list courses list</div>
+<div [hidden]="courses.length > 0">no courses yet</div>
+<router-outlet></router-outlet>
