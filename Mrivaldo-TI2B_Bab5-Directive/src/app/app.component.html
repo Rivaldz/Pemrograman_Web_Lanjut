@@ -10,7 +10,7 @@
  
 <!-- <div [hidden]="courses.length == 0"> list courses list</div>
 <div [hidden]="courses.length > 0">no courses yet</div> -->
-
+<!-- 
 <ul class="nav nav-pills">
   <li class="nav-item">
     <a 
@@ -45,6 +45,15 @@
 
     {{item.name}}
     <span *ngIf="isEven">(Even)</span>
+  </li>
+</ul> -->
+
+<button (click) = "onAdd()">add</button>
+
+<ul>
+  <li *ngFor="let item of coursesFor; even as isEven">
+    {{item.name}}
+    <span *ngIf="isEven">(even)</span>
   </li>
 </ul>
 <router-outlet></router-outlet>
