@@ -54,6 +54,7 @@
   <li *ngFor="let item of coursesFor; even as isEven">
     {{item.name}}
     <span *ngIf="isEven">(even)</span>
+    <button (click)="onRemove(item)">Remove</button>
   </li>
 </ul>
 <router-outlet></router-outlet>
