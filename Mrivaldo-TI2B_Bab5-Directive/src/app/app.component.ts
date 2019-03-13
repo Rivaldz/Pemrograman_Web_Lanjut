@@ -43,4 +43,7 @@ export class AppComponent {
       {id:5,nama:'courseone5'},
     ];
   }
+  trackCourse(index,itemone){
+    return itemone ? itemone.id : undefined;
+  }
 }

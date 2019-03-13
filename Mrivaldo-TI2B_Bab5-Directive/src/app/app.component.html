@@ -59,9 +59,13 @@
   </li>
 </ul> -->
 
-<button (click)="loadCourse()">Tampil data</button>
+<!-- <button (click)="loadCourse()">Tampil data</button>
 <li *ngFor="let itemone of courseForOne">
   {{itemone.nama}}
-</li>
+</li> -->
+
+<br>
+&nbsp; <button (click) = "loadCourse()">Tampilkan data</button>
+<li *ngFor="let itemone of courseForOne ; TrackBy:trackCourse">{{itemone.nama}}</li>
 <router-outlet></router-outlet>
 
