@@ -17,7 +17,7 @@ export class InputFormatDirective {
   @HostListener('blur')onblur(){
   //  console.log("onBlur")
   let value:string = this.el.nativeElement.value;
-  if(this.format=='lowercse')
+  if(this.format=='uppercase')
     this.el.nativeElement.value = value.toLowerCase();
   
   else
