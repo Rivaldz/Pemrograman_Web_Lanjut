@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
 import {FormGroup,FormBuilder} from '@angular/forms';
 import {mahasiswa} from './../mahasiswa.interface';
+import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-reactive-form',
   templateUrl: './reactive-form.component.html',
