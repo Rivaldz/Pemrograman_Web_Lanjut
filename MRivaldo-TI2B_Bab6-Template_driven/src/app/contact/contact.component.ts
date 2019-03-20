@@ -5,7 +5,7 @@ import { Component, OnInit,Input } from '@angular/core';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit {
+// export class ContactComponent implements OnInit {
   // @Input() nama:string;
   // @Input() comment:string;
   // constructor() { }
@@ -16,5 +16,4 @@ export class ContactComponent implements OnInit {
     log(x) {
       console.log(x);
     }
-  }
-}
+ }
