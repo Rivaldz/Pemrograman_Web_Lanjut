@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {mahasiswa} from './../mahasiswa.interface';
 import {FormGroup,FormBuilder} from '@angular/forms';
-
+import {mahasiswa} from './../mahasiswa.interface';
 @Component({
   selector: 'app-reactive-form',
   templateUrl: './reactive-form.component.html',
@@ -26,6 +25,10 @@ export class ReactiveFormComponent implements OnInit {
         nama_prodi:''
       })
     })
+}
+  onSubmit(f:FormGroup){
+    console.log("Hasil dari inputan adalah ");
+    console.log(f.value);
   }
 
 }
