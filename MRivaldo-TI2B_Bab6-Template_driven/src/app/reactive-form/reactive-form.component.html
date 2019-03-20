@@ -1,12 +1,16 @@
 <div class = "container">
   <div class = "col-md-4">
-    <form novalidate>
+    <form novalidate [formGroup]="mahasiswa" (ngSubmit)="onSubmit(mahasiswa)">
       <div class="form-group">
         <label for="nama_mahasiswa"> Nama Mahasiswa</label>
-        <input type="text" class="form-control" id="nama_mahsiswa" aria-describedby="namamhs" placeholder="nama mahasiswa"/>
+        <input type="text" 
+        class="form-control" 
+        id="nama_mahsiswa" 
+        aria-describedby="namamhs" 
+        placeholder="nama mahasiswa"/>
       </div>
       <div>
-        <div class="form-group">
+        <div [formGroupName]="pendidikan">
           <label for="jurusan">Jurusan</label>
           <input type="text" class="form-control" id="nama_jurusan" placeholder="jurusan"/>
         </div>
