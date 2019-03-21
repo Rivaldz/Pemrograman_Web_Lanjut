@@ -1,6 +1,6 @@
 <div class = "container">
   <div class = "col-md-4">
-    <form novalidate>
+    <form action="">
       <div class = "form-group">
         <label for="nama">Nama</label>
         <input 
@@ -8,7 +8,7 @@
           id = "nama" 
           class = "form-control" 
           ngModel
-          #firtsName="ngModel"
+          #firstName="ngModel"
           (change)="log(firstName)"
           name="nama"
           />
@@ -23,10 +23,10 @@
           name="comment"></textarea>
       </div>
       <button type="button" class="btn btn-primary"> button </button>
-      
+<!--       
       <p>Hasil Inputan</p>
       <p>Nama : {{nama}}</p>
-      <p>Comment : {{comment}}</p>
+      <p>Comment : {{comment}}</p> -->
     </form>
   </div>
 </div> 
