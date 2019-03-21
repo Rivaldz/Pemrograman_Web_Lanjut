@@ -13,7 +13,9 @@
           (change)="log(firstName)"
           name="nama"
           />
-          <div class = "alert alert-danger" *ngIf="!firstName.valid">Nama Harus Diisi</div>
+          <div class = "alert alert-danger"
+           *ngIf="!firstName.valid && firstName.touched" 
+           >Nama Harus Diisi</div>
       </div >
       <div class = "form-group">
         <label for="comment"> Comment</label>
