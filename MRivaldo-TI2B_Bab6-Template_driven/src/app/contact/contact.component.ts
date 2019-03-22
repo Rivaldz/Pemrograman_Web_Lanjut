@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+import { format } from 'url';
 
 @Component({
   selector: 'app-contact',
@@ -16,4 +17,11 @@ import { Component, OnInit,Input } from '@angular/core';
     log(x) {
       console.log(x);
     }
+
+    submit(form){
+       console.log(form);
+       form.valid;
  }
+ }
+
+
