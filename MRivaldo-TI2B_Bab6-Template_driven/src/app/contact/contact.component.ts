@@ -14,6 +14,13 @@ import { format } from 'url';
   // ngOnInit() {
   // }
   export class ContactComponent{
+   
+    contactMethod=[
+      {id:1,name:'email'},
+      {id:2,name:'phone'}
+    ]
+    
+    
     log(x) {
       console.log(x);
     }
@@ -21,7 +28,5 @@ import { format } from 'url';
     submit(form){
        console.log(form);
        form.valid;
+    }
  }
- }
-
-
