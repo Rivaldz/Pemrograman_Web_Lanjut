@@ -23,12 +23,12 @@
            <div *ngIf="firstName.errors['minlength']">Nama Minimal 3 Kata</div>
            <div *ngIf="firstName.errors['pattern']"> Nama Tidak Sesuai </div>
       </div >
-      <div ngModelGroup="contact" #contact="ngModelGroup">
+      <!-- <div ngModelGroup="contact" #contact="ngModelGroup">
         <div *ngIf="!contact.valid">
           Contoh Validasi pada ngModelGroup
         </div>
-        <!-- copas inputan nama disisi mas bro -->
-      </div>
+        copas inputan nama disisi mas bro
+      </div> -->
     
     </div>
       <div class = "form-group">
@@ -40,6 +40,16 @@
           ngModel 
           name="comment"></textarea>
       </div>
+
+      <div class="checkbox">
+        <label for="">
+          <input type="checkbox" ngModel name="isSubcribe"> Subcribe jika ingin Berlangganan
+        </label>
+      </div>
+      <p>
+        {{form.value|json}}
+      </p>
+
       <button type="button" class="btn btn-primary" [disabled]="!form.valid"> button </button>
 <!--       
       <p>Hasil Inputan</p>
