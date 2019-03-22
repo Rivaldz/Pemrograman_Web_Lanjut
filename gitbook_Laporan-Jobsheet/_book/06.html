@@ -1,0 +1,639 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7. Laporan bab 6 template driven · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="05.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    1. Jobsheet Pertama
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02.html">
+            
+                <a href="02.html">
+            
+                    
+                    2. Jobsheet Ke Dua
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03.html">
+            
+                <a href="03.html">
+            
+                    
+                    3. Jobsheet ke Tiga
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04.html">
+            
+                <a href="04.html">
+            
+                    
+                    4. Jobsheet ke Empat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    5. Laporan Bab 4
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05.html">
+            
+                <a href="05.html">
+            
+                    
+                    6. Laporan Bab 5 directive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="06.html">
+            
+                <a href="06.html">
+            
+                    
+                    7. Laporan bab 6 template driven
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >7. Laporan bab 6 template driven</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="laporan-praktikum-bab-6-templatedriven">Laporan Praktikum Bab 6-template_Driven</h1>
+<h2 id="61-membuat-form-bootstrap">61. Membuat Form Bootstrap</h2>
+<blockquote>
+<p>Membuat Komponen Baru dengan perintah ng g c contact</p>
+<p>Membuat form di contact-component.html</p>
+</blockquote>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span> = &quot;<span class="hljs-attr">container</span>&quot;&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span> = &quot;<span class="hljs-attr">container</span>&quot;&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span> = &quot;<span class="hljs-attr">form-group</span>&quot;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;nama&quot;</span>&gt;</span>Nama<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span> = &quot;<span class="hljs-attr">nama</span>&quot; <span class="hljs-attr">class</span> = &quot;<span class="hljs-attr">form-control</span>&quot; /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span> = &quot;<span class="hljs-attr">form-group</span>&quot;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;comment&quot;</span>&gt;</span> Comment<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span> = &quot;<span class="hljs-attr">form-control</span>&quot; <span class="hljs-attr">rows</span>=<span class="hljs-string">&quot;5&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;comment&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span> button <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h2 id="62-macam-macam-form">6.2 Macam Macam Form</h2>
+<blockquote>
+<p>Import Bootstrap di syles.css</p>
+<pre><code class="lang-typescript">@<span class="hljs-keyword">import</span> 
+<span class="hljs-string">&quot;~bootstrap/dist/css/bootstrap.css&quot;</span>;
+</code></pre>
+<p>Membuat komponen baru dengan perintah </p>
+<pre><code>ng g c reactive-form
+</code></pre></blockquote>
+<pre><code>ng g c template-driven
+</code></pre><blockquote>
+<p>Mengisi form pada file reactive-form.component.html </p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span> = &quot;<span class="hljs-attr">container</span>&quot;&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span> = &quot;<span class="hljs-attr">col-md-4</span>&quot;&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">novalidate</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;nama_mahasiswa&quot;</span>&gt;</span> Nama Mahasiswa<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;nama_mahsiswa&quot;</span> <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;namamhs&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;nama mahasiswa&quot;</span>/&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;jurusan&quot;</span>&gt;</span>jurusan<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;nama_jurusan&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;jurusan&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-group&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;programStudi&quot;</span>&gt;</span>Program Studi<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;nama_program_studi&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;program studi&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>
+</span></code></pre>
+<p>Hasil dari Run 
+img 2</p>
+<p>Membuat mahasiswa.interface.ts </p>
+</blockquote>
+<pre><code class="lang-typescript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> mahasiswa{
+    nama_mhs:<span class="hljs-built_in">string</span>;
+    pendidikan:{
+        nama_jurusan:<span class="hljs-built_in">string</span>;
+        nama_prodi:<span class="hljs-built_in">string</span>;
+    }
+}
+</code></pre>
+<blockquote>
+<p>Import FormBuilder dan FormsGroup </p>
+</blockquote>
+<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { Component, OnInit } from <span class="hljs-string">&apos;@angular/core&apos;</span>;
+<span class="hljs-keyword">import</span> {mahasiswa} from <span class="hljs-string">&apos;./../mahasiswa.interface&apos;</span>;
+<span class="hljs-keyword">import</span> {FormGroup, FormBbuilder, FormBuilder} from <span class="hljs-string">&apos;@angular/forms&apos;</span>;
+
+@Component({
+  selector: <span class="hljs-string">&apos;app-reactive-form&apos;</span>,
+  templateUrl: <span class="hljs-string">&apos;./reactive-form.component.html&apos;</span>,
+  styleUrls: [<span class="hljs-string">&apos;./reactive-form.component.css&apos;</span>]
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> ReactiveFormComponent <span class="hljs-keyword">implements</span> OnInit {
+
+  mahasiswa:FormGroup;
+
+  <span class="hljs-keyword">constructor</span>(private mhs:FormBuilder) {
+    <span class="hljs-keyword">this</span>.createForm();
+   }
+
+  ngOnInit() {
+  }
+
+  createForm(){
+    <span class="hljs-keyword">this</span>.mahasiswa= <span class="hljs-keyword">this</span>.mhs.group({
+      nama_mhs:<span class="hljs-string">&apos;&apos;</span>,
+      pendidikan:<span class="hljs-keyword">this</span>.mhs.group({
+        nama_jurusan:<span class="hljs-string">&apos;&apos;</span>,
+        nama_prodi:<span class="hljs-string">&apos;&apos;</span>
+      })
+    })
+  }
+
+}
+</code></pre>
+<blockquote>
+<p>Hasil dari running Program </p>
+</blockquote>
+<p>img3 </p>
+<blockquote>
+<p>Penggunaan template-driven untuk form </p>
+</blockquote>
+<p>langkah pertama menambahkan form module </p>
+<p>Langlah selanjutnya menambahkan struktur mahasiswa </p>
+<pre><code class="lang-typescript"> mahasiswa= {
+    nama_mhs:<span class="hljs-string">&apos;&apos;</span>,
+    pendidikan:{
+      nama_jurusan:<span class="hljs-string">&apos;&apos;</span>,
+      nama_prodi:<span class="hljs-string">&apos;&apos;</span>
+    }
+  }
+</code></pre>
+<p>Langkah selanjutnya penambahan di html component </p>
+<pre><code class="lang-typescript">        [(ngModel)]=<span class="hljs-string">&quot;mahasiswa.nama_mhs&quot;</span>
+        [ngModelOptions]=<span class="hljs-string">&quot;{standalone:true}&quot;</span>
+</code></pre>
+<p>Penambahan method onSubmit</p>
+<pre><code class="lang-typescript">  onSubmit(f:FormGroup){
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Hasil dari inputan adalah &quot;</span>);
+    <span class="hljs-built_in">console</span>.log(f.value);
+  }
+</code></pre>
+<h2 id="63-ngmodel">6.3 ngModel</h2>
+<blockquote>
+<p>Menambahkan ngModel di contact.component.html 
+Menambahkan input di contact.component.ts </p>
+</blockquote>
+<pre><code class="lang-typescript">  @input() nama:<span class="hljs-built_in">string</span>;
+  @Input() comment:<span class="hljs-built_in">string</span>;
+</code></pre>
+<blockquote>
+<p>Membuat atribut baru 
+```html</p>
+<input type="text" id="nama" class="form-control" [(ngmodel)]="nama" name="nama">
+
+</blockquote>
+<textarea class="form-control" rows="5" id="comment" [(ngmodel)]="comment" name="comment"></textarea>
+
+<pre><code>
+&gt;Memodifikasi ngModel supaya propertis terlihat
+
+```typescript 
+
+  export class ContactComponent{
+    log(x) {
+      console.log(x);
+    }
+ }
+</code></pre><p>hasil dari run img4</p>
+<h2 id="64-validasi">6.4 Validasi</h2>
+<blockquote>
+<p>Menambahkan Code di component Html seperti di bawah </p>
+</blockquote>
+<pre><code class="lang-html">          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span> = &quot;<span class="hljs-attr">alert</span> <span class="hljs-attr">alert-danger</span>&quot; *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">&quot;!firstName.valid&quot;</span>&gt;</span>Nama Harus Diisi<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Hasil percobaan </p>
+</blockquote>
+<p>img6</p>
+<blockquote>
+<p>Menambahkan dengan dua kondisi </p>
+</blockquote>
+<pre><code class="lang-html"> <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span> = &quot;<span class="hljs-attr">alert</span> <span class="hljs-attr">alert-danger</span>&quot;
+           *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">&quot;!firstName.valid &amp;&amp; firstName.touched&quot;</span> 
+           &gt;</span>Nama Harus Diisi<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h2 id="65-spesific-validasi-error">6.5 Spesific validasi Error</h2>
+<blockquote>
+<p>Menambahkan di inputan text box </p>
+</blockquote>
+<pre><code class="lang-html"> required
+          minlength=&quot;3&quot;
+          maxlength=&quot;10&quot;
+          pattern=&quot;pisang&quot;
+</code></pre>
+<blockquote>
+<p>Menambahkan alert di bawah textbox</p>
+</blockquote>
+<pre><code class="lang-html">        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span> = &quot;<span class="hljs-attr">alert</span> <span class="hljs-attr">alert-danger</span>&quot;
+           *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">&quot;!firstName.valid &amp;&amp; firstName.touched&quot;</span> 
+           &gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">&quot;firstName.errors[&apos;required&apos;]&quot;</span>&gt;</span>Nama Harus Diisi<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">&quot;firstName.errors[&apos;minlength&apos;]&quot;</span>&gt;</span>Nama Minimal 3 Kata<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">&quot;firstName.errors[&apos;pattern&apos;]&quot;</span>&gt;</span> Nama Tidak Sesuai <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>
+</span></code></pre>
+<blockquote>
+<p>hasil percobaan </p>
+</blockquote>
+<p>img7</p>
+<h2 id="66-styling-invalid-input-field">6.6 styling Invalid Input Field</h2>
+<blockquote>
+<p>Memodifikasi text box supaya ketika tidak sesuai maka tekbox berwarna merah </p>
+</blockquote>
+<pre><code class="lang-css"><span class="hljs-selector-class">.form-control</span><span class="hljs-selector-class">.ng-touched</span><span class="hljs-selector-class">.ng-invalid</span>{
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">4px</span> solid red;
+}
+</code></pre>
+<blockquote>
+<p>Hasil Percobaan </p>
+</blockquote>
+<p>img8</p>
+<h2 id="67-ngform">6.7 ngForm</h2>
+<blockquote>
+<p>Menambahkan method submit di contact.component.ts </p>
+</blockquote>
+<pre><code class="lang-typescript">    submit(form){
+       <span class="hljs-built_in">console</span>.log(form);
+       form.valid;
+    }
+</code></pre>
+<blockquote>
+<p>Menambahkan #form di head form </p>
+</blockquote>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> #<span class="hljs-attr">form</span>=<span class="hljs-string">&quot;ngForm&quot;</span> (<span class="hljs-attr">ngSubmit</span>)=<span class="hljs-string">&quot;submit(form)&quot;</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Merubah code di button </p>
+</blockquote>
+<pre><code class="lang-html">
+
+</code></pre>
+<h2 id="68-ngmodelgroup">6.8 ngModelGroup</h2>
+<pre><code class="lang-html">      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ngModelGroup</span>=<span class="hljs-string">&quot;contact&quot;</span> #<span class="hljs-attr">contact</span>=<span class="hljs-string">&quot;ngModelGroup&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">&quot;!contact.valid&quot;</span>&gt;</span>
+          Contoh Validasi pada ngModelGroup
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- copas inputan nama disisi mas bro --&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h2 id="disabling-the-submit-button">Disabling the submit button</h2>
+<pre><code class="lang-html">      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span> [<span class="hljs-attr">disabled</span>]=<span class="hljs-string">&quot;!form.valid&quot;</span>&gt;</span> button <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<p>Hasil Praktikum </p>
+<p>png9</p>
+<h2 id="bekerja-dengan-checkbox">Bekerja dengan checkbox</h2>
+<blockquote>
+<p>Menambahkan chekbox pada contact html </p>
+</blockquote>
+<pre><code class="lang-html">      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;checkbox&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">ngModel</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;isSubcribe&quot;</span>&gt;</span> Subcribe jika ingin Berlangganan
+        <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+        {{form.value|json}}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>hasil Dari praktikum </p>
+</blockquote>
+<p>img10</p>
+<h2 id="611-bekerja-dengan-drop-down-list">6.11 Bekerja Dengan drop-down list</h2>
+<blockquote>
+<p>Membuat drop down di file html component </p>
+<pre><code class="lang-html"> <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span> = &quot;<span class="hljs-attr">form-group</span>&quot;&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;contactMethod&quot;</span>&gt;</span> Contack Method <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">select</span>  <span class="hljs-attr">ngModel</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;contactMethod&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;contactMethod&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;form-control&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">option</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">&quot;let method of contactMethod&quot;</span> [<span class="hljs-attr">value</span>]=<span class="hljs-string">&quot;method&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>Menambahkan method contactMethod </p>
+<pre><code class="lang-typescript">    contactMethod=[
+      {id:<span class="hljs-number">1</span>,name:<span class="hljs-string">&apos;email&apos;</span>},
+      {id:<span class="hljs-number">2</span>,name:<span class="hljs-string">&apos;phone&apos;</span>}
+    ]
+</code></pre>
+<p>Mengubah Code Menjadi ngValue
+```html</p>
+<option *ngfor="let method of contactMethod" [ngvalue]="method.id"></option>
+
+</blockquote>
+<pre><code>
+&gt;Hasil Dari Praktikum 
+
+img11
+
+img12
+
+
+## 6.12 Bekerja dengan radio button 
+
+&gt; Menambahkan coding radio button di file component html 
+
+```html
+
+      &lt;div class = &quot;radio&quot;&gt;
+        &lt;label for=&quot;&quot;&gt;
+          &lt;input ngModel type=&quot;radio&quot; name=&quot;contactMethodRadio&quot; value = &quot;1&quot;&gt;
+          Email
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class = &quot;radio&quot;&gt;
+        &lt;label for=&quot;&quot;&gt;
+          &lt;input  ngModel type=&quot;radio&quot; name=&quot;contactMethodRadio&quot; value=&quot;2&quot;&gt;
+          Phone
+        &lt;/label&gt;
+      &lt;/div&gt;
+</code></pre><blockquote>
+<p>Mengubah menggunakan directive 
+```html
+ <div *ngfor="let method of contactMethod" class="radio">
+        <label for="">
+          <input ngmodel="" type="radio" name="contactMethodRadio" [value]="method.id"></label></div></p>
+</blockquote>
+<pre><code>    &lt;/label&gt;
+  &lt;/div&gt;
+</code></pre><p>```</p>
+<blockquote>
+<p>Hasil Praktikum </p>
+</blockquote>
+<p>img12</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="05.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 6. Laporan Bab 5 directive">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7. Laporan bab 6 template driven","level":"1.8","depth":1,"previous":{"title":"6. Laporan Bab 5 directive","level":"1.7","depth":1,"path":"05.md","ref":"05.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"06.md","mtime":"2019-03-22T08:57:15.923Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-22T09:04:42.637Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

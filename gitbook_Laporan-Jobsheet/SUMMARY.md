@@ -7,3 +7,4 @@
 * [4. Jobsheet ke Empat](04.md)
 * [5. Laporan Bab 4]()
 * [6. Laporan Bab 5 directive](05.md)
+* [7. Laporan bab 6 template driven](06.md)
