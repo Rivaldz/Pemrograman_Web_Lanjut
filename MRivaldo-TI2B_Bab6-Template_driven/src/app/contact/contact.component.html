@@ -40,7 +40,7 @@
           ngModel 
           name="comment"></textarea>
       </div>
-      <button type="button" class="btn btn-primary"> button </button>
+      <button type="button" class="btn btn-primary" [disabled]="!form.valid"> button </button>
 <!--       
       <p>Hasil Inputan</p>
       <p>Nama : {{nama}}</p>
