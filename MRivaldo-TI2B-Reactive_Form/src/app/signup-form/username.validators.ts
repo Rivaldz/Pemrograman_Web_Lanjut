@@ -1,4 +1,5 @@
 import {ValidationErrors, AbstractControl} from '@angular/forms';
+import { resolve } from 'path';
 
 export class ValidatorUsername{
     static cannotContainSpace (control: AbstractControl): ValidationErrors | null{
@@ -6,4 +7,15 @@ export class ValidatorUsername{
             return {cannotContainSpace: true};
         return null;
     }
+
+    static unique (control: AbstractControl): Promise < ValidationErrors | null > {
+        return new Promise((resolve, reject)=> {
+            setTimeout(()=>{
+                if(control.value === 'polinema')
+                resolve({unique: true});
+                else resolve(null);
+            }, 2000);
+        })
+    }
 }
+
