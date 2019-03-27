@@ -23,6 +23,12 @@ export class SignupFormComponent implements OnInit {
     return this.form.get('username');
   }
 
+  login(){
+    this.form.setErrors({
+      invalidLogin:true
+    });
+  }
+
   constructor() { }
 
   ngOnInit() {
