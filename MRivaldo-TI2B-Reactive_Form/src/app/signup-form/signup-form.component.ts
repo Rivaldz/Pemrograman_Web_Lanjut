@@ -10,7 +10,10 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 export class SignupFormComponent implements OnInit {
 
   form = new FormGroup({
-    username: new FormControl('',Validators.required),
+    username: new FormControl('',[
+        Validators.required,
+        Validators.minLength(5)
+    ]),
     password: new FormControl('',Validators.required)
   })
 
