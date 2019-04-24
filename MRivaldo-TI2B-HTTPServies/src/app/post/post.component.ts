@@ -26,6 +26,5 @@ export class PostComponent{
         post['id'] = response.json().id;
         this.posts.splice(0,0, post);
       }); 
-  }
 
-}
+  }
