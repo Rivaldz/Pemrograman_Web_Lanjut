@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { Http } from '@angular/http';
 
 @Component({
@@ -8,7 +8,7 @@ import { Http } from '@angular/http';
 })
 export class PostComponent{
   posts: any[];
-  private url = 'hdttp://jsonplaceholder.typicode.com/post';
+  private url = 'http://jsonplaceholder.typicode.com/posts';
 
    constructor(private http: Http) { 
     http.get(this.url)
@@ -17,8 +17,8 @@ export class PostComponent{
     });
   }
 
-  createPost(input = HTMLInputElement){
-    let post = {title: input.value};
+  createPost(input : HTMLInputElement){
+    let post:any = {title:input.value};
     input.value = '';
 
     this.http.post(this.url, JSON.stringify(post))
