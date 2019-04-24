@@ -6,9 +6,15 @@ import { Http } from '@angular/http';
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css']
 })
-export class PostComponent implements OnInit {
+export class PostComponent{
+  posts: any[];
 
-  constructor(http: Http) { }
+  constructor(http: Http) { 
+    http.get('http://jsonplaceholder.typicode.com/post')
+    .subscribe(Response => {
+      this.posts = Response.json();
+    });
+  }
 
   ngOnInit() {
   }
