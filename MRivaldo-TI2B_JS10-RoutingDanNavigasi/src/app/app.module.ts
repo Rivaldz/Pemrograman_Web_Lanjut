@@ -33,6 +33,7 @@ import { ProfileComponent } from './profile/profile.component';
       {path:'', component:HomeComponent},
       {path:'form',component:FormMemberComponent},
       {path:'post',component:PostComponentComponent},
+      {path:'profile/:id', component:ProfileComponent},
       {path:'**',component:NotFoundComponent}])
     ],
   providers: [],
