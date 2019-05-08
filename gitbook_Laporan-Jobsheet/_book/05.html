@@ -68,10 +68,6 @@
     <div class="book-summary">
         
             
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
-
             
                 <nav role="navigation">
                 
@@ -105,7 +101,7 @@
                 <a href="01.html">
             
                     
-                    1. Jobsheet Pertama
+                    1. Jobsheet Ke Satu
             
                 </a>
             
@@ -231,9 +227,6 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
-    <div class="search-noresults">
-    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="bab-5-directive">BAB 5 DIRECTIVE</h1>
@@ -245,12 +238,12 @@
 <p>Memanggil di app.component.html</p>
 </blockquote>
 <pre><code class="lang-html">
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">&quot;courses.length &gt; 0&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> *<span class="hljs-attribute">ngIf</span>=<span class="hljs-value">&quot;courses.length &gt; 0&quot;</span>&gt;</span>
   list of courses
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">&quot;courses.length == 0&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> *<span class="hljs-attribute">ngIf</span>=<span class="hljs-value">&quot;courses.length == 0&quot;</span>&gt;</span>
   no courses yet
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
 <blockquote>
 <p>Melihat hasil dengan Menjalankan LocalHost</p>
@@ -258,56 +251,56 @@
 <p><img src="image/js4/1.g" alt=""></p>
 <h3 id="contoh-kedua-menggunakan-else">Contoh kedua menggunakan else</h3>
 <pre><code class="lang-html"><span class="hljs-comment">&lt;!-- percabangan ke 2 --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">&quot;courses.length &gt; 0 ; else noCourses&quot;</span>&gt;</span>no courses yet<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-ng <span class="hljs-tag">&lt;<span class="hljs-name">ng-template</span> #<span class="hljs-attr">noCourses</span>&gt;</span> no courses yet<span class="hljs-tag">&lt;/<span class="hljs-name">ng-template</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> *<span class="hljs-attribute">ngIf</span>=<span class="hljs-value">&quot;courses.length &gt; 0 ; else noCourses&quot;</span>&gt;</span>no courses yet<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+ng <span class="hljs-tag">&lt;<span class="hljs-title">ng-template</span> #<span class="hljs-attribute">noCourses</span>&gt;</span> no courses yet<span class="hljs-tag">&lt;/<span class="hljs-title">ng-template</span>
 </span></code></pre>
 <blockquote>
 <p>Melihat hasil percobaan ke 2</p>
 </blockquote>
 <p><img src="image/js4/1.j" alt=""></p>
 <h3 id="cara-ketiga">cara ketiga</h3>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">&quot;courses.length &gt; 0 ; then coursesList else noCourses&quot;</span>&gt;</span>List of Courses<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">ng-template</span> #<span class="hljs-attr">noCourses</span>&gt;</span> no courses yet<span class="hljs-tag">&lt;/<span class="hljs-name">ng-template</span>&gt;</span>
-ng <span class="hljs-tag">&lt;<span class="hljs-name">ng-template</span> #<span class="hljs-attr">coursesList</span>&gt;</span>atribut coursesList<span class="hljs-tag">&lt;/<span class="hljs-name">ng-template</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> *<span class="hljs-attribute">ngIf</span>=<span class="hljs-value">&quot;courses.length &gt; 0 ; then coursesList else noCourses&quot;</span>&gt;</span>List of Courses<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">ng-template</span> #<span class="hljs-attribute">noCourses</span>&gt;</span> no courses yet<span class="hljs-tag">&lt;/<span class="hljs-title">ng-template</span>&gt;</span>
+ng <span class="hljs-tag">&lt;<span class="hljs-title">ng-template</span> #<span class="hljs-attribute">coursesList</span>&gt;</span>atribut coursesList<span class="hljs-tag">&lt;/<span class="hljs-title">ng-template</span>&gt;</span>
 </code></pre>
 <h2 id="62-hidden-properti">6.2 Hidden Properti</h2>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">hidden</span>&gt;</span> list courses list<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>no courses yet<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">hidden</span>&gt;</span> list courses list<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>no courses yet<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
 <p>gambar</p>
 <blockquote>
 <p>menambahkan properti</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> [<span class="hljs-attr">hidden</span>]=<span class="hljs-string">&quot;courses.length == 0&quot;</span>&gt;</span> list courses list<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> [<span class="hljs-attr">hidden</span>]=<span class="hljs-string">&quot;courses.length &gt; 0&quot;</span>&gt;</span>no courses yet<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> [<span class="hljs-attribute">hidden</span>]=<span class="hljs-value">&quot;courses.length == 0&quot;</span>&gt;</span> list courses list<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> [<span class="hljs-attribute">hidden</span>]=<span class="hljs-value">&quot;courses.length &gt; 0&quot;</span>&gt;</span>no courses yet<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
 </blockquote>
 <h2 id="63-ngswitch-case">6.3 ngSwitch Case</h2>
 <blockquote>
 <p>Menambahkan html </p>
 </blockquote>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav nav-pills&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> 
-      (<span class="hljs-attr">click</span>)=<span class="hljs-string">&quot;viewMode = &apos;map&apos;&quot;</span>
-      <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span>
-      [<span class="hljs-attr">class.active</span>]=<span class="hljs-string">&quot;viewMode == &apos;map&apos;&quot;</span>
-      &gt;</span>Map View<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-item&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> 
-     (<span class="hljs-attr">click</span>)=<span class="hljs-string">&quot;viewMode = &apos;list&apos;&quot;</span>
-     <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav-link&quot;</span>
-     [<span class="hljs-attr">class.active</span>]=<span class="hljs-string">&quot;viewMode == &apos;list&apos;&quot;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;nav nav-pills&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;nav-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> 
+      (<span class="hljs-attribute">click</span>)=<span class="hljs-value">&quot;viewMode = &apos;map&apos;&quot;</span>
+      <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;nav-link&quot;</span>
+      [<span class="hljs-attribute">class.active</span>]=<span class="hljs-value">&quot;viewMode == &apos;map&apos;&quot;</span>
+      &gt;</span>Map View<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;nav-item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> 
+     (<span class="hljs-attribute">click</span>)=<span class="hljs-value">&quot;viewMode = &apos;list&apos;&quot;</span>
+     <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;nav-link&quot;</span>
+     [<span class="hljs-attribute">class.active</span>]=<span class="hljs-value">&quot;viewMode == &apos;list&apos;&quot;</span>
      &gt;</span>list View
-  <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> [<span class="hljs-attr">ngSwitch</span>]=<span class="hljs-string">&quot;viewMode&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngSwitchCase</span>=<span class="hljs-string">&quot;&apos;map&apos;&quot;</span>&gt;</span>Map View Content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngSwitchCase</span>=<span class="hljs-string">&quot;&apos;list&apos;&quot;</span>&gt;</span>List View Content<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngSwitchDefault</span>&gt;</span>Other<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">router-outlet</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">router-outlet</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> [<span class="hljs-attribute">ngSwitch</span>]=<span class="hljs-value">&quot;viewMode&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> *<span class="hljs-attribute">ngSwitchCase</span>=<span class="hljs-value">&quot;&apos;map&apos;&quot;</span>&gt;</span>Map View Content<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> *<span class="hljs-attribute">ngSwitchCase</span>=<span class="hljs-value">&quot;&apos;list&apos;&quot;</span>&gt;</span>List View Content<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> *<span class="hljs-attribute">ngSwitchDefault</span>&gt;</span>Other<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">router-outlet</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">router-outlet</span>&gt;</span>
 </code></pre>
 <h2 id="ngfor">ngFor</h2>
 <blockquote>
@@ -325,23 +318,23 @@ ng <span class="hljs-tag">&lt;<span class="hljs-name">ng-template</span> #<span 
 <blockquote>
 <p>Menambahkkan directive ngFor</p>
 </blockquote>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">&quot;let item of coursesFor ; index as i&quot;</span> &gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> *<span class="hljs-attribute">ngFor</span>=<span class="hljs-value">&quot;let item of coursesFor ; index as i&quot;</span> &gt;</span>
     -
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
 </code></pre>
 <p>gambar</p>
 <blockquote>
 <p>Menandai dengan membaeri tanda genap </p>
 </blockquote>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">&quot;let item of coursesFor ; even as isEven&quot;</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> *<span class="hljs-attribute">ngFor</span>=<span class="hljs-value">&quot;let item of coursesFor ; even as isEven&quot;</span>&gt;</span>
 
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">&quot;isEven&quot;</span>&gt;</span>(Even)<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> *<span class="hljs-attribute">ngIf</span>=<span class="hljs-value">&quot;isEven&quot;</span>&gt;</span>(Even)<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>
 </span></code></pre>
 <h2 id="ngfor-dan-change-detection">ngFor dan change detection</h2>
 <blockquote>
@@ -387,23 +380,23 @@ onAdd(){
 <blockquote>
 <p>Mengedit file di html</p>
 </blockquote>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">&quot;loadCourse()&quot;</span>&gt;</span>Tampil data<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">li</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">&quot;let itemone of courseForOne&quot;</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> (<span class="hljs-attribute">click</span>)=<span class="hljs-value">&quot;loadCourse()&quot;</span>&gt;</span>Tampil data<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">li</span> *<span class="hljs-attribute">ngFor</span>=<span class="hljs-value">&quot;let itemone of courseForOne&quot;</span>&gt;</span>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
 </code></pre>
 <blockquote>
 <p>Menambahkan track by </p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
-&amp;nbsp; <span class="hljs-tag">&lt;<span class="hljs-name">button</span> (<span class="hljs-attr">click</span>) = &quot;<span class="hljs-attr">loadCourse</span>()&quot;&gt;</span>Tampilkan data<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">li</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">&quot;let itemone of courseForOne ; TrackBy:trackCourse&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+&amp;nbsp; <span class="hljs-tag">&lt;<span class="hljs-title">button</span> (<span class="hljs-attribute">click</span>) = &quot;<span class="hljs-attribute">loadCourse</span>()&quot;&gt;</span>Tampilkan data<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">li</span> *<span class="hljs-attribute">ngFor</span>=<span class="hljs-value">&quot;let itemone of courseForOne ; TrackBy:trackCourse&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
 </code></pre>
 </blockquote>
 <h2 id="the-leading-asterik">the leading asterik</h2>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">&quot;courses.length &gt; 0&quot;</span>&gt;</span>list courses<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-ng <span class="hljs-tag">&lt;<span class="hljs-name">ng-template</span> [<span class="hljs-attr">ngIf</span>]=<span class="hljs-string">&quot;courses.length&gt;0&quot;</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> *<span class="hljs-attribute">ngIf</span>=<span class="hljs-value">&quot;courses.length &gt; 0&quot;</span>&gt;</span>list courses<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+ng <span class="hljs-tag">&lt;<span class="hljs-title">ng-template</span> [<span class="hljs-attribute">ngIf</span>]=<span class="hljs-value">&quot;courses.length&gt;0&quot;</span>&gt;</span>
   list of course
-<span class="hljs-tag">&lt;/<span class="hljs-name">ng-template</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ng-template</span>&gt;</span>
 
   list of course
 </code></pre>
@@ -423,22 +416,6 @@ UPDATE src/app/app.module.ts (485 bytes)
                                 
                                 </section>
                             
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
                         </div>
                     </div>
                 
@@ -458,7 +435,7 @@ UPDATE src/app/app.module.ts (485 bytes)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"6. Laporan Bab 5 directive","level":"1.7","depth":1,"next":{"title":"7. Laporan bab 6 template driven","level":"1.8","depth":1,"path":"06.md","ref":"06.md","articles":[]},"previous":{"title":"5. Laporan Bab 4","level":"1.6","depth":1,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"05.md","mtime":"2019-03-17T12:01:03.653Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-22T09:04:42.637Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6. Laporan Bab 5 directive","level":"1.7","depth":1,"next":{"title":"7. Laporan bab 6 template driven","level":"1.8","depth":1,"path":"06.md","ref":"06.md","articles":[]},"previous":{"title":"5. Laporan Bab 4","level":"1.6","depth":1,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{"maxIndexSize":1000000},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"05.md","mtime":"2019-05-01T16:07:10.096Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-07T05:45:23.987Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -472,7 +449,7 @@ UPDATE src/app/app.module.ts (485 bytes)
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search/lunr.min.js"></script>
         
     
         
@@ -492,7 +469,7 @@ UPDATE src/app/app.module.ts (485 bytes)
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
         
     
 

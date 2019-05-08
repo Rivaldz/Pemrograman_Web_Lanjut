@@ -68,10 +68,6 @@
     <div class="book-summary">
         
             
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
-
             
                 <nav role="navigation">
                 
@@ -105,7 +101,7 @@
                 <a href="01.html">
             
                     
-                    1. Jobsheet Pertama
+                    1. Jobsheet Ke Satu
             
                 </a>
             
@@ -231,9 +227,6 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
-    <div class="search-noresults">
-    
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="jobsheet-4-displaying-data-and-handling-events">Jobsheet-4: Displaying Data And Handling Events</h1>
@@ -253,41 +246,41 @@
   Courses;
 
   binding = <span class="hljs-string">&apos;property-binding&apos;</span>;
-  image <span class="hljs-keyword">constructor</span>(private service:CoursesService){  
+  image <span class="hljs-constructor"><span class="hljs-keyword">constructor</span>(private service:CoursesService)</span>{  
     <span class="hljs-keyword">this</span>.Courses=service.getCourses();
   }Url = <span class="hljs-string">&apos;http://lorempixel.com/400/200&apos;</span>
 </code></pre>
 <ul>
 <li>Sources code courses.component.html</li>
 </ul>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>
             #ID
-        <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Courses Name <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">&quot;let Courses of Courses&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Courses Name <span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span> *<span class="hljs-attribute">ngFor</span>=<span class="hljs-value">&quot;let Courses of Courses&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> [<span class="hljs-attr">attr.colspan</span>]=<span class="hljs-string">&apos;colspan&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">td</span> [<span class="hljs-attribute">attr.colspan</span>]=<span class="hljs-value">&apos;colspan&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> [<span class="hljs-attr">textContent</span>] =<span class="hljs-string">&apos;binding&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h2</span> [<span class="hljs-attribute">textContent</span>] =<span class="hljs-value">&apos;binding&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;&quot;</span> /&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">img</span> [<span class="hljs-attr">src</span>]=<span class="hljs-string">&quot;imageUrl&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;&quot;</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">img</span> [<span class="hljs-attribute">src</span>]=<span class="hljs-value">&quot;imageUrl&quot;</span> /&gt;</span>
 </code></pre>
 <ul>
 <li>hasil run </li>
@@ -299,12 +292,12 @@
 <pre><code class="lang-typescript"> colspan = <span class="hljs-number">2</span> ;
 </code></pre>
 <p> -Menambah courses di component.html </p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">td</span> [<span class="hljs-attr">attr.colspan</span>]=<span class="hljs-string">&apos;colspan&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">td</span> [<span class="hljs-attribute">attr.colspan</span>]=<span class="hljs-value">&apos;colspan&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
 </code></pre>
 <ul>
 <li>hasil run </li>
@@ -331,9 +324,9 @@
   }
 </code></pre>
 <p>html</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">&quot;onDivClick($event)&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">&quot;onSave($event)&quot;</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> (<span class="hljs-attribute">click</span>)=<span class="hljs-value">&quot;onDivClick($event)&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-default&quot;</span> (<span class="hljs-attribute">click</span>)=<span class="hljs-value">&quot;onSave($event)&quot;</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>
 </span></code></pre>
 <p>5.Hasil Compile </p>
 <p>e<a href="image/js4/5.jpg"></a></p>
@@ -351,7 +344,7 @@
 <p><img src="image/js4/9.jpg" alt=""></p>
 <h3 id="bagian-7-template-variable">Bagian 7 Template variable</h3>
 <p>-Menambahkan variable nama dan parameter</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span> =<span class="hljs-string">&quot;text&quot;</span> #<span class="hljs-attr">nama</span> (<span class="hljs-attr">keyup.enter</span>)=<span class="hljs-string">&quot;onKeyUp(nama.value)&quot;</span>&gt;</span>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span> =<span class="hljs-value">&quot;text&quot;</span> #<span class="hljs-attribute">nama</span> (<span class="hljs-attribute">keyup.enter</span>)=<span class="hljs-value">&quot;onKeyUp(nama.value)&quot;</span>&gt;</span>
 </code></pre>
 <pre><code class="lang-typescript">onKeyUp(nama){
     <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.nama);
@@ -384,22 +377,6 @@
                                 
                                 </section>
                             
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
                         </div>
                     </div>
                 
@@ -419,7 +396,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4. Jobsheet ke Empat","level":"1.5","depth":1,"next":{"title":"5. Laporan Bab 4","level":"1.6","depth":1,"ref":"","articles":[]},"previous":{"title":"3. Jobsheet ke Tiga","level":"1.4","depth":1,"path":"03.md","ref":"03.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"04.md","mtime":"2019-03-05T16:20:46.091Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-22T09:04:42.637Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4. Jobsheet ke Empat","level":"1.5","depth":1,"next":{"title":"5. Laporan Bab 4","level":"1.6","depth":1,"ref":"","articles":[]},"previous":{"title":"3. Jobsheet ke Tiga","level":"1.4","depth":1,"path":"03.md","ref":"03.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{"maxIndexSize":1000000},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"04.md","mtime":"2019-05-03T14:14:14.527Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-07T05:45:23.987Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -433,7 +410,7 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="gitbook/gitbook-plugin-search/lunr.min.js"></script>
         
     
         
@@ -453,7 +430,7 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
         
     
 
