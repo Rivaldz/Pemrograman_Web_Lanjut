@@ -1,0 +1,491 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>8. Laporan bab 7 reactive form · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="06.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    1. Jobsheet Ke Satu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="02.html">
+            
+                <a href="02.html">
+            
+                    
+                    2. Jobsheet Ke Dua
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="03.html">
+            
+                <a href="03.html">
+            
+                    
+                    3. Jobsheet ke Tiga
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="04.html">
+            
+                <a href="04.html">
+            
+                    
+                    4. Jobsheet ke Empat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    5. Laporan Bab 4
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="05.html">
+            
+                <a href="05.html">
+            
+                    
+                    6. Laporan Bab 5 directive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="06.html">
+            
+                <a href="06.html">
+            
+                    
+                    7. Laporan bab 6 template driven
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="07.html">
+            
+                <a href="07.html">
+            
+                    
+                    8. Laporan bab 7 reactive form
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >8. Laporan bab 7 reactive form</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="laporan-pemrograman-web-lanjut-reactive-form">Laporan Pemrograman Web Lanjut Reactive Form</h1>
+<h3 id="bagian-1--building-a-bootstrap-form">Bagian 1 : Building a Bootstrap form</h3>
+<ol>
+<li>Soal 1 
+Membuat form sign up di file signup-form.component.html yang digunakan untuk menampilkan ke tampilan awal browser </li>
+</ol>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;username&quot;</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> 
+        <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> 
+        <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;username&quot;</span>
+        <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>
+    &gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;password&quot;</span>&gt;</span>Password<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;form-control&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;btn btn-primary&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;submit&quot;</span>&gt;</span>Sign Up<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>
+</span></code></pre>
+<p>Hasil dari Percobaan </p>
+<p><img src="image/reactiveForm/1.jpg" alt=""></p>
+<h3 id="bagian-2--control-programmatically">Bagian 2 : Control Programmatically</h3>
+<ol>
+<li>Soal 2 </li>
+</ol>
+<p>Menambahkan code di signup-form.component.ts yang dimana akan memanggil form group dan juga menambahkan [formGroup]=&quot;form&quot;</p>
+<pre><code class="lang-typescript">  form = <span class="hljs-keyword">new</span> FormGroup({
+    username: <span class="hljs-keyword">new</span> FormControl(),
+    password: <span class="hljs-keyword">new</span> FormControl()
+  }
+</code></pre>
+<p>Hasil dari Praktikum &quot;terjadi error&quot;
+<img src="image/reactiveForm/3.jpg" alt=""> </p>
+<p>Menambahkan import seperti di bawah  </p>
+<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> {FormsModule, ReactiveFormsModule} from <span class="hljs-string">&apos;@angular/forms&apos;</span>;
+</code></pre>
+<p>Dan juga Menambahkan import di file module.ts </p>
+<pre><code class="lang-typescript"> imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+  ]
+</code></pre>
+<ol>
+<li>soal no 3 
+Tidak terjadi error pada percobaan ini karena form mudule telah di import sehingga form berjalan lancar 
+<img src="image/reactiveForm/3.jpg" alt=""></li>
+</ol>
+<h3 id="bagian-3--adding-validation">Bagian 3 : Adding Validation</h3>
+<p> menambahkan import validators dan juga menambahkan validatord required seperti di bawah ini </p>
+<pre><code class="lang-typescript">  form = <span class="hljs-keyword">new</span> FormGroup({
+    username: <span class="hljs-keyword">new</span> FormControl(<span class="hljs-string">&apos;&apos;</span>,Validators.required),
+    password: <span class="hljs-keyword">new</span> FormControl(<span class="hljs-string">&apos;&apos;</span>,Validators.required)
+  }
+</code></pre>
+<p>dan sedikit modifikasi di htmlnya yang di gunakan apabila username telah di gunakan </p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> *<span class="hljs-attribute">ngIf</span>=<span class="hljs-value">&quot;form.get(&apos;username&apos;).touched &amp;&amp; form.get(&apos;username&apos;).invalid&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;alert alert-danger&quot;</span>&gt;</span>Username Is Required<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<ol>
+<li><p>Soal no 4 
+validasi form tidakberfungsi ketika saya mengetikan nama sesuai tidak terjadi apa apa 
+<img src="image/reactiveForm/4.jpg" alt=""></p>
+<p>Menambahkan method get username </p>
+<pre><code class="lang-typescript">  <span class="hljs-keyword">get</span> username(){
+ <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.form.get(<span class="hljs-string">&apos;username&apos;</span>);
+}
+</code></pre>
+</li>
+<li><p>Soal no 5 
+ program akan memberitahukan ke user apabila isi dari form username kosong<br><img src="image/reactiveForm/5.jpg" alt=""></p>
+</li>
+</ol>
+<h3 id="bagian-4--specific-validaton-errors">Bagian 4 : Specific Validaton Errors</h3>
+<pre><code>Memodifikasi signup-form.component.ts
+
+```typescript
+  form = new FormGroup({
+username: new FormControl(&apos;&apos;,[
+    Validators.required,
+    Validators.minLength(5)
+]),
+password: new FormControl(&apos;&apos;,Validators.required)
+</code></pre><p>  })</p>
+<pre><code>```
+
+Menambahkan di file html signup-form 
+
+```html 
+</code></pre> <div *ngif="username.touched &amp;&amp; username.invalid" class="alert alert-danger">
+      <div *ngif="username.errors.required">Username is requied</div>
+      <div *ngif="username.errors.minlength">Username should minimum 5 character</div>
+    </div>
+    ```
+
+6. Soal no 6 
+   Hasil dari praktiku adalah ketika kita melakukan pengisian di form username maka akan memunculkan error berupa username require dan apabila username yang diisi kurang dari 5 karakter maka akan memunculkan min character username 5 
+
+![](image\reactiveForm\7.jpg)
+
+   Memdodifikasi signupform html 
+   ```html 
+         <div *ngif="username.errors.minlength">Username should minimum  characters</div>
+
+<pre><code>
+7. Soal no 7 
+   akan memunculkan error sesuai dengan lengminimum yang di tentukan 
+
+![](image\reactiveForm\6.jpg)
+
+### Bagian 5 : custome Validation 
+
+Membuat file baru dengan nama username.validators.ts yang kemudian di isi dengan script di bawah in 
+
+```typescript 
+import {ValidationErrors, AbstractControl} from &apos;@angular/forms&apos;;
+
+export class UsernmaeValidators{
+    static cannotContainSpace (control: AbstractControl): ValidationErrors | null{
+        if((control.value as string).indexOf(&apos; &apos;)&gt;=0)
+            return {cannotContainSpace: true};
+        return null;
+    }
+}
+</code></pre><p>dan kemudian memodifikasi komponen signform component ts </p>
+<pre><code class="lang-typescript">  form = <span class="hljs-keyword">new</span> FormGroup({
+    username: <span class="hljs-keyword">new</span> FormControl(<span class="hljs-string">&apos;&apos;</span>,[
+        Validators.required,
+        Validators.minLength(<span class="hljs-number">5</span>),
+        UsernmaeValidators.cannotContainSpace
+    ]),
+</code></pre>
+<p>dan memodifikasi signup html </p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> *<span class="hljs-attribute">ngIf</span>=<span class="hljs-value">&quot;username.errors.cannotContaininSpace&quot;</span>&gt;</span>Cannot contain space<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<ol>
+<li>soal no 8 </li>
+</ol>
+<p>Hasil dari praktikum 
+yang dimana program akan memunculkan error berupa tidak di perbolehkanya space </p>
+<p><img src="image/reactiveForm/8.jpg" alt=""></p>
+<h3 id="bagian-6--asyncronus-validation">Bagian 6 : Asyncronus Validation</h3>
+<p>Menambahkan method baru di username.validator.ts </p>
+<pre><code class="lang-typescript">    <span class="hljs-keyword">static</span> unique (control: AbstractControl): Promise &lt; ValidationErrors | <span class="hljs-literal">null</span> &gt; {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Promise((resolve, reject)=&gt; {
+            setTimeout(()=&gt;{
+                <span class="hljs-keyword">if</span>(control.value === <span class="hljs-string">&apos;polinema&apos;</span>)
+                resolve({unique: <span class="hljs-literal">true</span>});
+                <span class="hljs-keyword">else</span> resolve(<span class="hljs-literal">null</span>);
+            }, <span class="hljs-number">2000</span>);
+        })
+    }
+</code></pre>
+<ol>
+<li>Soal no 9 
+ akan muncul tampilan username sudah di gunakan </li>
+</ol>
+<p><img src="image/reactiveForm/8.jpg" alt=""></p>
+<h3 id="bagian-7-displaying-a-loader-image">Bagian 7 :displaying a loader image</h3>
+<p>modifikasi signup-form.component.html yaitu penambahakn div seperti di bawah ini </p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> *<span class="hljs-attribute">ngIf</span>=<span class="hljs-value">&quot;username.pending&quot;</span>&gt;</span>Checking for uniquiness....<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<ol>
+<li>soal no 10 
+Muncul tulisan cheking unique sekejap setelah mengetik polinema </li>
+</ol>
+<p><img src="image/reactiveForm/9.jpg" alt=""></p>
+<h3 id="bagian-8--validating-form-on-submit">Bagian 8 : Validating Form on Submit</h3>
+<p>memodifikasi signup-form.component.ts dengan cara menambahka metohd login() </p>
+<pre><code class="lang-typescript">login(){
+    <span class="hljs-keyword">this</span>.form.setErrors({
+      invalidLogin:<span class="hljs-literal">true</span>
+    });
+  }
+</code></pre>
+<ol>
+<li>akan muncul tulisan password invalid </li>
+</ol>
+<p><img src="image/reactiveForm/10.jpg" alt=""></p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="06.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 7. Laporan bab 6 template driven">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"8. Laporan bab 7 reactive form","level":"1.9","depth":1,"previous":{"title":"7. Laporan bab 6 template driven","level":"1.8","depth":1,"path":"06.md","ref":"06.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{"maxIndexSize":1000000},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"07.md","mtime":"2019-05-09T16:07:25.657Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-09T15:04:51.483Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
