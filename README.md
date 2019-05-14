@@ -6,4 +6,4 @@
 
 ```Kelas : TI-2B ```
 
-                        ```JANGAN LUPA BERSYUKUR :))```
+                        ```Semoga Berkah:))```
